@@ -1,19 +1,19 @@
 # SI-507-final-project
 
-Data sources:
+## Data sources
 The Open Movie Database(Through Web API)
     You need to apply for API key(http://www.omdbapi.com/apikey.aspx)
     And put the API key into secret.py like this:
         omdb_api=yourkey
 http://www.imdb.com/(Crawling multiple pages)
 
-Installation of Third party Library needed to run the program:
+## Installation of Third party Library needed to run the program:
 To install using pip, enter the following command at a Bash or Windows command prompt:
 pip install beautifulsoup4
 pip install requests
 pip install bokeh
 
-Brief description of code structure:
+## Brief description of code structure
 ui.py   using Bokeh to construct the web-based GUI
 class app
     get_layout_query: generate the gui layout
@@ -40,9 +40,9 @@ three important functions
             record:
             a tuple of the episode details:(title,data,rating,des,url,belong,season)
 
-Brief user guide:
+## Brief user guide:
 Use the bokeh serve command to run the program by executing:
-    bokeh serve --show ui.py
+     bokeh serve --show ui.py
 at your command prompt. Then the URL
-    http://localhost:5006/ui
+     http://localhost:5006/ui
 will be displayed in your browser.
